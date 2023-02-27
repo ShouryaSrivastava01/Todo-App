@@ -1,5 +1,28 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+  
+ 
+}
+
+.App::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url('./assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+    /* position: absolute; */
+    /* top:0px;
+    left:0px; */
+    
 }
 
 .App-logo {
@@ -13,26 +36,101 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 40vw;
+  margin: 20vh 0 2vh  0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wallet{
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-around;
+  padding: 0 2px 0 2px;
+  /* overflow: hidden; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addTask{
+  /* background-color: white; */
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background: #24273D;
+  margin: 0 0 5vh 0;
+  
+}
+
+.addTask input[type="text"]{
+  background: #24273D;
+  width: 90%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  
+}
+.addTask input[type="text"]:focus{
+  border: none;
+  background: #24273D;
+  
+  
+}
+
+.addTask input[type="submit"]{
+  background: #24273D;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.addTask input[type="submit"]:hover{
+  color: #69696d;
+}
+
+.taskList{
+  list-style: none;
+    width: 39vw;
+    background: #24273d;
+    margin: 5px 0 5px 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5px 1px 10px;
+    color:#757575;
+    border: 1px solid black;
+}
+
+.taskList button{
+  background: #24273d;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.taskList button:hover{
+  scale: 1.1;
+}
+
+.saveBtn{
+  border: 1px solid #191919;
+  background: #24273d;
+  color: white;
+  width: 66px;
+  height: 30px;
+  /* border-radius: 2px; */
+  cursor: pointer;
+}
+
+.saveBtn:hover{
+  scale: 1.05;
+}
+
+.footer{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: white;
 }
