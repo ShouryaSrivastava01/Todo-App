@@ -1,4 +1,4 @@
-# Todo App using Blockchain and IPFS (InterPlanetry File System) 
+# Todo App using Blockchain and IPFS (InterPlanetary File System) 
 
 ### Application UI
 ![App Face](./src/assets/site1.PNG "App Face")
@@ -29,6 +29,13 @@ We're using IPFS here, because to store data onto blockchain is costly & IPFS al
 npm install
 ```
 To install all the dependencies and packages used in this project.
+
+1. Grab the smart contract from ```src/contract/contract.sol```
+2. Run it on Remix IDE
+3. Copy the Contract's ABI from remix ide and store it in ```todo_abi.json```
+4. Select your desired ethereum account and deploy the smart contract.
+5. Copy contract address and save it in ```contractAddress``` detailed inside ```App.js``` file.
+
 
 ### Troubleshoot
 * Go through the code carefully and use google for any minor issues

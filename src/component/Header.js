@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import wallet from '../assets/wallet.svg'
 
 export default function Header({ account }) {
@@ -7,7 +7,7 @@ export default function Header({ account }) {
         <div className="header">
             <div>TODO's</div>
             <div className="wallet">
-                <img src={wallet} />
+                <img src={wallet} alt="wallet" />
                 <abbr title={account} style={{ textDecoration: "none", overflow: "hidden" }}>{account}</abbr>
             </div>
         </div>
