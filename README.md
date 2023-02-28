@@ -1,7 +1,7 @@
 # Todo App using Blockchain and IPFS (InterPlanetary File System) 
 
 ### Application UI
-![App Face](./src/assets/site1.png "App Face")
+![App Face](./src/assets/site1.PNG "App Face")
 
 ### Tools Used 
 * Remix IDE
